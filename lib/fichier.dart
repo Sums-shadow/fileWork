@@ -66,7 +66,7 @@ class _FichierState extends State<Fichier> {
   getFilePathPublique() async {
     String path = await ExtStorage.getExternalStoragePublicDirectory(
         // enregistre le fichier dans le dossier document un dossier publique, cela demande la permission de l'utilisateur(donction mis a l'initstate)
-        ExtStorage.DIRECTORY_DOCUMENTS);
+        ExtStorage.DIRECTORY_ALARMS);
     var data = File("$path/information.txt");
     return data;
   }
